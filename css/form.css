@@ -1,0 +1,43 @@
+/* Reset de formatações padrões feitas pelo prórprio navegador */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    font-size: 50px;
+}
+
+p {
+    margin: 6px;
+}
+
+.container {
+    height: 300px;
+    width: 270px;
+    background-color: #fff;
+    border: 1px solid #200;
+    border-radius: 10px;
+    position: absolute;
+    top: calc(50% - 200px);
+    right: calc(50% - 140px);
+    padding: 10px;
+    margin: 2px;
+}
+
+.button-return {
+    padding: 5px;
+    margin-left: 75px;
+    margin-top: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    color: white;
+    background-color: #dc4500;
+}
