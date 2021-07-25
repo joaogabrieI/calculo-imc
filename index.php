@@ -5,16 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
     <title>Cálculo-IMC</title>
 </head>
 
 <body>
     <h1>Calculo IMC</h1>
-    <img src="img/img-fundo.jpeg" width="100%" height="555px">
     <div class="container">
         <!-- Form que envia uma requisição POST -->
-        <form method="POST" action="imcCalculo.php" class="format">
+        <form method="POST" action="resultado.php" class="format">
             <label>Nome: </label>
             <input type="text" name="nome" required="text" maxlength="12">
 
@@ -36,7 +34,7 @@
 
             <br>
 
-            <input type="submit" value="Enviar" class="button-send">
+            <a href="resultado.php"><input type="submit" value="Enviar" class="button-send"></a>        
             <input type="reset" value="Limpar" class="button-clear">
         </form>
     </div>
