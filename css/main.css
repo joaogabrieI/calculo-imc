@@ -55,9 +55,9 @@ input {
     background-color: #fff;
     border: 1px solid #200;
     border-radius: 10px;
-    position: absolute;
-    top: calc(50% - 200px);
-    right: calc(50% - 125px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .format {

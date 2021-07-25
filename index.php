@@ -10,11 +10,11 @@
 </head>
 
 <body>
-    <H1>Calculo IMC</H1>
+    <h1>Calculo IMC</h1>
     <img src="img/img-fundo.jpeg" width="100%" height="555px">
     <div class="container">
         <!-- Form que envia uma requisição POST -->
-        <form method="POST" action="form.php" class="format">
+        <form method="POST" action="imcCalculo.php" class="format">
             <label>Nome: </label>
             <input type="text" name="nome" required="text" maxlength="12">
 
