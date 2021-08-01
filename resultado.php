@@ -14,7 +14,7 @@ function calculoIMC($altura, $peso): float // função que calcula o imc do usu�
     return $imc;
 }
 
-function faixaIMC($imc)// função que define a faixa de imc do usuário
+function faixaIMC($imc) // função que define a faixa de imc do usuário
 {
     switch ($imc) {
         case ($imc < 18.5):
@@ -37,48 +37,30 @@ function faixaIMC($imc)// função que define a faixa de imc do usuário
             break;
     }
 }
+?>
 
-function exibe($nome, $peso, $idade, $altura) // função que exibe os resultados digitados pelo usuário
-{
-    global $html, $imc;
-    $html .= "<!DOCTYPE html>
-                <html lang='pt-br'>
-                <head>
-                <meta charset='UTF-8'>
-                <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-                <title>Resultado - IMC</title>
-            </head>
+<!DOCTYPE html>
+<html lang="en">
 
-            <body>
-            <h1>Resultado</h1>
-            <div class='container'>
-                <!-- Declaração de variáveis e output dos dados registrados pelo usuário. -->
-                <p><b>Seu nome: ";
-                echo $nome;
-                $html .= "</b></p>
-                <p><b>Sua Idade: ";
-                echo $idade;
-                $html .= "</b></p>
-                <p><b>Seu peso:  ";
-                echo $peso;
-                $html .= "</b></p>
-                <p><b>Sua Altura: ";
-                echo $altura;
-                $html .= "</b></p>
-                <p><b>Seu IMC: ";
-                echo $imc;
-                $html .= "</b>
-                <p><b>Faixa do IMC: ";
-                echo faixaIMC($imc);
-                $html .= "</b></p>
-            <form action='index.html'>
-                <input type='submit' value='Retornar' class='button-return'>
-            </form>     
-        </div>
-    </body>
-</html>";
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
 
-    return $html;
-}
+<body>
+    <div>
+        <h1>Resultado</h1>
 
-echo exibe($nome, $peso, $idade, $altura);
+        <p><b>Nome: <?php echo $nome ?></b></p>
+        <p><b>Idade: <?php echo $idade ?></b></p>
+        <p><b>Peso: <?php echo $peso ?></b></p>
+        <p><b>Altura: <?php echo $altura ?></b></p>
+        <p><b>IMC: <?php echo calculoIMC($altura, $peso) ?></b></p>
+        <p><b>Faixa de IMC: <?php echo faixaIMC($imc) ?></b></p>
+
+    </div>
+</body>
+
+</html>

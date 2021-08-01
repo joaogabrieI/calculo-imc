@@ -1,4 +1,4 @@
-## Calculo de IMC - Índice de massa corporal :muscle:
+# Calculo de IMC - Índice de massa corporal :muscle:
 
 Aplicação WEB PHP que calcula o índice de massa corporal do usuário através de um formulário html, o usuário insere os seus dados como: nome, idade, altura e peso. Com isso o programa recebe esses valores, trata e informa a faixa de imc junto com os dados digitados.
 
@@ -9,5 +9,4 @@ Aplicação WEB PHP que calcula o índice de massa corporal do usuário através
   - Entre 30 e 34,9 Obesidade grau 1
   - Entre 35 e 39,9 Obesidade grau 2
   - Mais do que 40 Obesidade grau 3
-
-​		
+  
